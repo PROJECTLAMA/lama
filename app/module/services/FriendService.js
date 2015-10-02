@@ -52,13 +52,14 @@ function FriendService($http, $q) {
   /*
    * 친구를 삭제한다.
    */
-  function removeFriend(idx) {
+  function removeFriend(idx,user_name) {
     var defer = $q.defer();
     $http({
       url: '/lama/api/removefriend.php',
       method: 'get',
       params: {
-        IDX: idx
+        IDX: idx,
+        USER_NAME: user_name
       }
     })
     .success(function(data){

@@ -15,7 +15,7 @@ function CtrlFriend($scope, FriendService) {
   $scope.removeFriend = function() {
     var lastValue = $scope.friends.length,
       lastIdx = $scope.friends[lastValue-1].IDX
-    FriendService.removeFriend(lastIdx,$scope.friend)
+    FriendService.removeFriend(lastIdx)
       .then(function(){
         $scope.friends.pop();
       });
