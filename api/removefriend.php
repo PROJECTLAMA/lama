@@ -8,8 +8,7 @@ $user_name = $_GET['USER_NAME'];
 
 $data = $database->query("
 DELETE FROM LAMA_FRIEND
-WHERE IDX = $idx
-AND   USER_NAME = $user_name;
+WHERE IDX = $idx;
 ")->fetchAll(PDO::FETCH_ASSOC);
   
   print_r('{}');
