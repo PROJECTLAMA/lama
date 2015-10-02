@@ -13,7 +13,7 @@ function FriendService($http, $q) {
   function getFriend() {
     var defer = $q.defer();
     $http({
-      url: '/lama/api/getfriend.php',
+      url: '/api/getfriend.php',
       method: 'get',
       params: {
         action: 'get'
