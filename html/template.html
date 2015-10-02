@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Bootstrap</title>
+	<!-- CDN 서버에서 Bootstrap 라이브러리를 호출한다. -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style type="text/css">
+	.box {border: 1px solid #000; min-height:100px;}
+	</style>
+</head>
+
+<body>
+<!-- wrapper class로 전체를 감싸안는다. (wrapper 클래스 내부는 bootstrap class를 적용할수 있음) -->
+<div class="wrapper">
+
+
+
+
+	<div class="top_wrapper">
+
+		<!-- 반응형 네비게이션을 만든다. -->
+		<nav class="navbar navbar-default navbar-inverse navbar-static-top main" role="navigation">
+			<div class="container">
+
+				<!-- 모바일에서 화면일 경우 표시되는 영역 -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">스크린 리더에서만 보이는 TEXT</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/" class="logo_wrapper"><h1>LOGO</h1></a>
+				</div>
+
+				<!-- PC에서는 넓게 보이고, 모바일에서는 숨김으로 보임 -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav choose_page">
+						<li><a href="/menu1.html">메뉴1</a></li>
+						<li><a href="/menu2.html">메뉴2</a></li>
+						<li><a href="/menu3.html">메뉴3</a></li>
+						<li><a href="/menu4.html">메뉴4</a></li>
+						<li><a href="/menu5.html">메뉴5</a></li>
+						<li><a href="/menu6.html">메뉴6</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<!-- // 반응형 네비게이션을 만든다. -->
+
+		<!-- 점보트론(메뉴 하단의 넓은 영역) -->
+		<div class="jumbotron">
+			<h2 class="container">부트스트랩을 만들자</h2>
+		</div>
+	</div>
+	<!-- //Navigation -->
+
+
+
+
+
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- 
+		그리드 시스템 
+		xs: extra small: 모바일 화면 (768px 보다 작은)
+		sm: small : 패드 화면 (768px 이상)
+		md: middle : 데스크탑 화면 (992px 이상)
+		lg: large: 아주 큰 데스크탑 화면 (1200px 이상)
+		* row 클래스는 테이블의 tr과 같은 개념
+		* 한줄에 col의 값의 합이 12가 되어야 함
+		-->
+		<div class="row">
+			<h1>그리드시스템</h1>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+			<div class="col-xs-12 col-sm-6 col-md-3 col-lg-1 box"></div>
+		</div>
+		<!-- // 그리드 시스템  -->
+
+		<!-- 
+		<그리드 시스템 사용 예시>
+		데스크탑(md) 환경일때
+		 - 좌측에 메뉴를 12칸 중에 2칸을 할당한다.
+		 - 중간에 컨텐츠를 7칸을 할당한다.
+		 - 우측에 최근 컨텐츠를 3칸을 할당한다.
+		   2 + 7 + 3 = 12
+
+		패드(sm) 환경일때
+		 - 좌측메뉴 4칸 할당
+		 - 컨텐츠 8칸 할당
+		 - 우측 최근 컨텐츠는 하단에 표시
+
+		모바일(xs)에서는 세로로 나열한다.
+		-->
+		<div class="row">
+			<h1>그리드시스템 사용예시</h1>
+			<div class="col-xs-12 col-sm-4 col-md-2 box">
+				<h2>좌측 메뉴</h2>
+				<ul>
+					<li>메뉴1</li>
+					<li>메뉴2</li>
+					<li>메뉴3</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-8 col-md-7 box">
+				<h2>컨텐츠 목록</h2>
+				<ul>
+					<li>인기 게시물1</li>
+					<li>인기 게시물2</li>
+					<li>인기 게시물3</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-12 col-md-3 box">
+				<h2>최근 컨텐츠</h2>
+				<ul>
+					<li>최근 게시물1</li>
+					<li>최근 게시물2</li>
+					<li>최근 게시물3</li>
+				</ul>
+			</div>
+		</div>
+		<!-- // 그리드 시스템 사용 예시  -->
+
+		<div class="row">
+			<h1>버튼테마</h1>
+			<button class="btn btn-default">버튼 테마</button>
+			<button class="btn btn-info">버튼 테마</button>
+			<button class="btn btn-warning">버튼 테마</button>
+			<button class="btn btn-danger">버튼 테마</button>
+			<button class="btn btn-primary">버튼 테마</button>
+			<button class="btn btn-success">버튼 테마</button>
+			<button class="btn btn-default btn-lg">큰 버튼</button>
+			<button class="btn btn-default btn-sm">작은 버튼</button>
+			<button class="btn btn-info btn-block">block 버튼</button>
+		</div>
+
+		<div class="row">
+			<h1>아이콘</h1>
+			<i class="glyphicon glyphicon-asterisk"></i>
+			<i class="glyphicon glyphicon-plus"></i>
+			<i class="glyphicon glyphicon-euro"></i>
+			<i class="glyphicon glyphicon-eur"></i>
+			<i class="glyphicon glyphicon-minus"></i>
+			<i class="glyphicon glyphicon-cloud"></i>
+			<i class="glyphicon glyphicon-envelope"></i>
+			<i class="glyphicon glyphicon-pencil"></i>
+		</div>
+	</div>
+	<!-- //Container -->
+
+
+
+<!--
+부트 스트랩 한글 메뉴얼: http://bootstrapk.com/css/
+부트 스트랩 샘플 페이지: http://ironsummitmedia.github.io/startbootstrap-sb-admin-2/pages/index.html
+-->
+
+
+
+</div>
+<!-- //Wrapper -->
+</body>
+</html>
