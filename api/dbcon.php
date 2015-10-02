@@ -3,10 +3,10 @@
 //$db=mysql_select_db("gaeyoucom", $conn);
 $setting = array(// required
 	'database_type' => 'mysql',
-	'database_name' => 'gaeyoucom',
+	'database_name' => 'lama',
 	'server' => 'localhost',
-	'username' => 'gaeyoucom',
-	'password' => 'love7878',
+	'username' => 'lama',
+	'password' => 'lamapw',
 	'charset' => 'utf8',
  
 	// optional
