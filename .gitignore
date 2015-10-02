@@ -1,3 +1,4 @@
 .DS_Store
+dbcon.php
 package.json
 sftp-config.json

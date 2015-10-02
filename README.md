@@ -17,12 +17,9 @@ lama/
   |   |- dbcon.php
   |
   |- app/
-  |   |- controllers/
   |   |- css/
   |   |   |- redesign.css
   |   |
-  |   |- directives/
-  |   |- filters/
   |   |- libs/
   |   |   |- anugular/
   |   |   |- anugular-mocks/
@@ -34,7 +31,15 @@ lama/
   |   |   |- moment/
   |   |   |- underscore/
   |   |
-  |   |- services/
+  |   |- module/
+  |   |   |- controllers/
+  |   |   |- directives/
+  |   |   |- filters/
+  |   |   |- services/
+  |   |
+  |   |- script/
+  |   |   |- app.js
+  |   |
   |   |- test/
   |   |- index.html
   |   |- app.js
