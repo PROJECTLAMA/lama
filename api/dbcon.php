@@ -3,9 +3,9 @@
 //$db=mysql_select_db("gaeyoucom", $conn);
 $setting = array(// required
 	'database_type' => 'mysql',
-	'database_name' => 'lama',
+	'database_name' => 'gaeyoucom',
 	'server' => 'localhost',
-	'username' => 'lama',
+	'username' => 'gaeyoucom',
 	'password' => 'lamapw',
 	'charset' => 'utf8',
  

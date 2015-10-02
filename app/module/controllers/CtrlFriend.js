@@ -4,17 +4,20 @@ function CtrlFriend($scope, FriendService) {
   
   // 친구를 추가한다.
   $scope.addFriend = function() {
-    FriendService.addFriend()
+    FriendService.addFriend($scope.friend)
       .then(function(data){
+        $scope.friends.push(data);
         $scope.friend = '';
       });
   }
 
   // 친구를 삭제한다.
   $scope.removeFriend = function() {
-    FriendService.removeFriend()
-      .then(function(data){
-        alert('삭제되었습니다.');
+    var lastValue = $scope.friends.length,
+      lastIdx = $scope.friends[lastValue-1].IDX
+    FriendService.removeFriend(lastIdx)
+      .then(function(){
+        $scope.friends.pop();
       });
   }
 

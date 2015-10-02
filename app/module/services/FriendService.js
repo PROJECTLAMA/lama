@@ -31,13 +31,13 @@ function FriendService($http, $q) {
   /*
    * 친구를 추가한다.
    */
-  function addFriend() {
+  function addFriend(friend) {
     var defer = $q.defer();
     $http({
       url: '/api/addfriend.php',
       method: 'get',
       params: {
-        action: 'get'
+        USER_NAME: friend
       }
     })
     .success(function(data){
@@ -52,13 +52,13 @@ function FriendService($http, $q) {
   /*
    * 친구를 삭제한다.
    */
-  function removeFriend() {
+  function removeFriend(idx) {
     var defer = $q.defer();
     $http({
       url: '/api/removefriend.php',
       method: 'get',
       params: {
-        action: 'get'
+        IDX: idx
       }
     })
     .success(function(data){

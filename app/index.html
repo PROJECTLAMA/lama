@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-offset-2 col-md-8">
         <ul>
-          <li ng-repeat="friend in friends" ng-bind="friend.name"></li>
+          <li ng-repeat="friend in friends" ng-bind="friend.USER_NAME" data-idx="{{friend.IDX}}"></li>
         </ul>
 
         <form class="form-inline">
