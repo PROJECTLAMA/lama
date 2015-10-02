@@ -15,6 +15,9 @@ lama/
   |   |- libs/
   |   |    |- medoo/
   |   |- dbcon.php
+  |   |- addfriend.php
+  |   |- getfriend.php
+  |   |- removefriend.php
   |
   |- app/
   |   |- css/
